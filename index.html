@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f162cd4357.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ------------------------ header------------- -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/images/mp.png">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#internships">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times " onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+
+        <p> Software Enginner </p><br>
+        <h2>
+          <pre>    Hi, I'm <span>Mayuresh</span> Pujari </pre>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------About------------ -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/mayurb.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <h3>Computer Engineer | Full-Stack Developer</h3><br><br>
+          <p id="p2">I'm B.Tech Graduate hands-on in web development, I'm a highly motivated and skilled individual.
+            Intermediate in HTML, CSS, JavaScript, React and Git, I'm dedicated to creating visually appealing and
+            user-friendly websites. Additionally, I have hands-on experience with Java and Mysql(database), allowing me
+            to build robust and scalable back-end solutions.. I've undertaken personal projects that demonstrate my
+            practical expertise and passion for web development. Adaptable and eager to learn, I'm seeking opportunities
+            to contribute my creativity and technical skills to real-world projects. With a focus on continuous growth,
+            aim to become a valuable asset in the dynamic and innovative field of web development.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links " onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Front-End </span><br> Html (HTML Tags , Flex , Attributes )<br> Css (Selectors , Box-model ,
+                Flex-Box , Animation) <br> JavaScript (DOM ,Array , String , Arrow Functions , Events) <br> ReactJs
+                (State Manipulation , JSX , Props , Hooks)</li><br>
+              <li><span>Back-End</span><br> Java (OOPS Concepts , Arrays , String , Collection , Exception Handling ,
+                Multi Threading )</li><br>
+              <li><span>MYSQL </span>(MySQL Commands , Joins , Clauses , Keys , Functions )</li>
+            </ul>
+          </div>
+          <div class="tab-contents " id="education">
+            <ul>
+              <li><span> 2019-23(B-Tech)</span><br> J.J.Magdum College of Engineering <br> Percentage : 76 % </li><br>
+              <li><span>2019 (HSC)</span><br>G.A. College , Sangli
+                Percentage : 64 %
+              </li><br>
+              <li><span>2017 (SSC)</span>City High School , Sangli<br>
+                Percentage : 86 %
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>August 2023 to July 2024</span><br>Seven Mentor,Pune(Intern)<br> </li><br>
+
+              <li><span>January 2023 to April 2024 </span><br>Tech Speak IT Solutions,Sangli(Intern)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <-----------------------------------services---------------------------->
+  <div id="internships">
+    <div class="container">
+      <h1 class="sub-title">My Internships</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-brands fa-java" style="color: #bf1212;"></i>
+          <i class="fa-brands fa-html5" style="color: #4ebd05;"></i>
+          <i class="fa-brands fa-css3-alt " style="color: #0756df;"></i>
+          <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+          <i class="fa-brands fa-react" style="color: #3ea5f4;"></i>
+
+          <h2>Full-Stack Java Intern,<br> Seven Mentor,Pune.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magni in. Consequuntur iusto dolorum
+            provident quis deserunt rem architecto minima illo dolorem esse. Tempora asperiores sapiente sit corporis
+            animi ab.</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database" style="color: #ae00ff;"></i>
+          <h2>Database-Management Intern,<br>Tech-Speak IT Solutions,Sangli.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magni in. Consequuntur iusto dolorum
+            provident quis deserunt rem architecto minima illo dolorem esse. Tempora asperiores sapiente sit corporis
+            animi ab.</p>
+          <a href="#">learn more</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------project---------------------------- -->
+  <div id="project">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/curr.jpg">
+          <div class="layer">
+            <h2>Currency Convertor</h2>
+            <p>This Currency Converter is a web application built using React that allows users to convert amounts
+              between different currencies in real-time. The application utilizes an API to fetch the latest exchange
+              rates, ensuring accuracy and up-to-date conversions.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/face.jpg">
+          <div class="layer">
+            <h2>Face Recognition Attendance System</h2>
+            <p>The Face Recognition Attendance System is an innovative application designed to streamline attendance
+              tracking using facial recognition technology. This system, developed with Python and utilizing the NumPy
+              library along with other machine learning tools, provides a highly efficient and accurate method for
+              monitoring attendance in various settings such as educational institutions, corporate offices, and events.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h2>social Media app</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, harum sunt. Doloribus, distinctio
+              necessitatibus libero voluptatem sed similique perferendis incidunt accusamus reiciendis consectetur
+              inventore laudantium reprehenderit, rerum ipsa optio dicta.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">see more</a>
+    </div>
+  </div>
+  <!-- ----------------------------contact-------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p> <i class="fa-solid fa-envelope fa-bounce"></i><a href="mailto:mayureshpujari01@gmail.com" style="text-decoration: none;
+         color: aliceblue;">mayureshpujari01@gmail.com</a></p>
+          <p><i class="fa-solid fa-phone-volume fa-shake"></i><a href="tel:+919834505913" style="text-decoration: none;
+         color: aliceblue;">9834505913</a></p>
+          <div class="social-icons ">
+            <a href="https://www.instagram.com/_mayuresh_pujari_/"><i class="fa-brands fa-instagram "></i></a>
+            <a href="https://github.com/marrix123"><i class="fa-brands fa-github "></i></a>
+            <a href="https://in.linkedin.com/in/mayureshpujari45"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/mayurcv.pdf" class="btn">Download CV</a>
+        </div>
+        <!-- ----form---- -->
+        <div class="contact-right"></div>
+      </div>
+    </div>
+    <div class="copy-right">
+      <p>© 2024 Made With <i class="fa-solid fa-heart fa-flip" style="color:#ff004f;"></i>By Mayuresh. All rights
+        reserved.</p>
+    </div>
+  </div>
+  <!-- <script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var  sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+
+  </script> -->
+  <script src="script.js"></script>
+</body>
+
+</html>
